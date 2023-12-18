@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-family: "PT Serif",Georgia,Times,Times New Roman,serif;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Set a high z-index to ensure it stays on top of other elements */
+    background-color: #333;
+    overflow: hidden;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    font-family: 'Brush Script MT', cursive;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+header img { 
+max-width: 300px;    
+max-height: 100px;
+}
+
+/* Home Page */
+.main-section {
+    position: relative;
+    height: 100vh;
+    background-image: url("./images/chef-ana-sayfa.jpg"); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;  /* Adjust text color for better visibility on the background */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+ 
+}
+
+.overlay h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.5em;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 400px;
+}
+.overlay a {
+    color: #fff;
+    text-decoration: none;
+}
+/* About Me Page */
+.aboutme-main-section {
+    position: relative;
+    height: 200vh;
+    
+    background-image: url("./images/about\ me.jpg"); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white; 
+}
+.aboutme-overlay {
+    position: absolute;
+    left: 2%;
+    text-align: left;
+    width: 30%;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.aboutme-overlay h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.aboutme-overlay p {
+    font-size: 1.5em;
+    margin: 0;
+}
+/* Your existing styles */
+
+.gallery-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap between items */
+    justify-content: space-evenly; /* Adjust alignment of items */
+}
+
+.gallery-item {
+    text-align: left;
+    width: 30%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners for a more aesthetic look */
+}
+.recipe {
+    text-align: left;
+    font-size: 1em;
+    color: #333;
+    margin-top: 8px;
+}
+
+.recipe h2 {
+    margin-top: 10px; /* Adjust the margin as needed */
+    color: #666; /* Optional: Adjust the color */
+}
+.recipe p { 
+width: 33%;
+
+
+}
+
+.contact-main-section {
+    position: relative;
+    height: 200vh;
+    
+    background-image: url("./images/contact.jpg"); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white; 
+}
+.contact-overlay {
+    position: absolute;
+    left: 2%;
+    text-align: left;
+    width: 30%;
+    margin-left: 90px;
+    margin-top: 120px;
+    padding-top: 30px;
+}
+
+.contact-overlay h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contact-overlay p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.tips-main-section {
+    position: relative;
+    height: 200vh;
+    
+    background-image: url("./images/about\ me.jpg"); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white; 
+}
+.tips-overlay {
+    position: absolute;
+    left: 2%;
+    text-align: left;
+    width: 30%;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.tips-overlay h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.tips-overlay p {
+    font-size: 1.5em;
+    margin: 0;
+}
+.tips-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap between items */
+    justify-content: space-evenly; /* Adjust alignment of items */
+}
+
+.tips-item {
+    text-align: left;
+    width: 30%;
+}
+.tips-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners for a more aesthetic look */
+}
