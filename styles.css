@@ -94,7 +94,8 @@ max-height: 100px;
     position: absolute;
     left: 2%;
     text-align: left;
-    width: 30%;
+    width: auto;
+    max-width: 30%;
     margin-left: auto;
     margin-top: 30px;
 }
@@ -229,4 +230,28 @@ width: 33%;
     width: 100%;
     height: auto;
     border-radius: 8px; /* Add rounded corners for a more aesthetic look */
+}
+
+/* below is for the tablet desktop and phone version */
+
+@media only screen and (max-width: 768px) {
+    .gallery-item,
+    .contact-overlay,
+    .tips-item
+    {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+}
+
+/* below is for the tablet desktop and phone version */
+
+@media only screen and (max-width: 768px) {
+    
+    .aboutme-overlay {
+        width: auto;
+        max-width: 80%;
+        margin-left: 0;
+    }
 }
