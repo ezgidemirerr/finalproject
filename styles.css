@@ -46,7 +46,7 @@ max-height: 100px;
 .main-section {
     position: relative;
     height: 100vh;
-    background-image: url("./images/chef-ana-sayfa.jpg"); /* Replace with the path to your background image */
+    background-image: url("./images/chef-ana-sayfa.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
