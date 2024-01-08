@@ -3,25 +3,32 @@ body {
     font-family: "PT Serif",Georgia,Times,Times New Roman,serif;
 }
 header {
-    position: sticky;
+    position: sticky; /* I made the header consistent. */
     top: 0;
-    z-index: 100; /* Set a high z-index to ensure it stays on top of other elements */
+    z-index: 100; /* I set this 100 to ensure it stays on top of all elements */
     background-color: #333;
-    overflow: hidden;
+    overflow: hidden; /* I wanted to hidden scroll because it didn't look well with the background image */
     padding: 15px;
     color: white;
-    display: flex;
+    display: flex; /* I wanted my header elements in same line */
     justify-content: space-between;
     align-items: center;
 }
+.nav-gallery{
+   color: lightgreen; /* I wanted to highlight gallery page as a call to action */
+}
 
 .header-text {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT', cursive; /* my client's choice */
+}
+header img {
+    max-width: 300px;
+    max-height: 100px;
 }
 
 nav {
     background-color: #333;
-    overflow: hidden;
+    overflow: hidden; /* I wanted to hidden scroll because it didn't look well with the background image */
 }
 
 nav a {
@@ -33,13 +40,9 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover { /* It's for the user to show them when they interact with an element */
     background-color: #ddd;
     color: black;
-}
-header img { 
-max-width: 300px;    
-max-height: 100px;
 }
 
 /* Home Page */
@@ -51,7 +54,7 @@ max-height: 100px;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    overflow: hidden;  /* Adjust text color for better visibility on the background */
+    overflow: hidden;
 }
 
 .overlay {
@@ -60,7 +63,6 @@ max-height: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
- 
 }
 
 .overlay h2 {
@@ -83,10 +85,10 @@ max-height: 100px;
     position: relative;
     height: 200vh;
     
-    background-image: url("./images/about\ me.jpg"); /* Replace with the path to your background image */
+    background-image: url("./images/about\ me.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* I did not want my background image to repeated along the horizontal and vertical axes */
     background-attachment: fixed; 
     color: white; 
 }
@@ -109,8 +111,7 @@ max-height: 100px;
     font-size: 1.5em;
     margin: 0;
 }
-/* Your existing styles */
-
+/* Gallery Page */
 .gallery-section {
     padding: 20px;
     background-color: #f4f4f4;
@@ -119,8 +120,8 @@ max-height: 100px;
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* Adjust the gap between items */
-    justify-content: space-evenly; /* Adjust alignment of items */
+    gap: 16px; /* I adjusted the gap between items */
+    justify-content: space-evenly; /* I adjusted alignment of items */
 }
 
 .gallery-item {
@@ -131,7 +132,7 @@ max-height: 100px;
 .gallery-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Add rounded corners for a more aesthetic look */
+    border-radius: 8px; /* I added rounded corners for a better aesthetic look */
 }
 .recipe {
     text-align: left;
@@ -141,20 +142,19 @@ max-height: 100px;
 }
 
 .recipe h2 {
-    margin-top: 10px; /* Adjust the margin as needed */
-    color: #666; /* Optional: Adjust the color */
+    margin-top: 10px;
+    color: #666;
 }
 .recipe p { 
 width: 33%;
-
-
 }
 
+/* Contact Page */
 .contact-main-section {
     position: relative;
     height: 200vh;
     
-    background-image: url("./images/contact.jpg"); /* Replace with the path to your background image */
+    background-image: url("./images/contact.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -180,12 +180,12 @@ width: 33%;
     font-size: 1.5em;
     margin: 0;
 }
-
+/* Tips Page */
 .tips-main-section {
     position: relative;
     height: 200vh;
     
-    background-image: url("./images/about\ me.jpg"); /* Replace with the path to your background image */
+    background-image: url("./images/about\ me.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@ width: 33%;
 .tips-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Add rounded corners for a more aesthetic look */
+    border-radius: 8px; /* I add rounded corners for a better aesthetic look */
 }
 
 /* below is for the tablet desktop and phone version */
